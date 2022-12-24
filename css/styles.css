@@ -400,17 +400,17 @@ p {
   margin-bottom: 28px;
 }
 
-.header-logo {
+.logo__header {
   color: var(--header-logo-color);
 }
 
-.footer-logo {
+.logo__footer {
   color: var(--primary-white-color);
 }
 
 /* Header */
 
-.header {
+.page-header {
   border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -508,7 +508,7 @@ p {
 
 /* Footer */
 
-.footer {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
