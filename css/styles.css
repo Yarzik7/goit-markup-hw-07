@@ -382,10 +382,10 @@ p {
   align-items: center;
 }
 
-.header .link,
+/* .header .link,
 .footer .link {
   display: block;
-}
+} */
 
 /* Logo */
 
@@ -639,9 +639,9 @@ p {
   cursor: pointer;
 }
 
-.buttons.hero-button,
-.buttons.subscribe-button,
-.buttons.send-button {
+.hero-button,
+.subscribe-button,
+.send-button {
   height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -658,7 +658,7 @@ p {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-.buttons.subscribe-button {
+.subscribe-button {
   display: flex;
   align-items: center;
   padding-right: 28px;
@@ -666,7 +666,7 @@ p {
   margin-left: 12px;
 }
 
-.buttons.subscribe-button .icon {
+.action-buttons__icon {
   margin-left: 10px;
 }
 
@@ -696,8 +696,8 @@ p {
     box-shadow var(--transition-duration) var(--timing-function);
 }
 
-.buttons.action-buttons:hover,
-.buttons.action-buttons:focus {
+.action-buttons:hover,
+.action-buttons:focus {
   background-color: var(--hero-button-accent);
 }
 
