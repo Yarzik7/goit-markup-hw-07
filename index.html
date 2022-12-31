@@ -467,9 +467,14 @@
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button class="modal__close" type="button" data-modal-close>
+          <svg class="modal__close-icon" width="11" height="11">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
         <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="form" name="form-for-modal">
-          <div class="form-fields">
+          <div class="form-fields modal__form-fields">
             <label class="form-fields__lable">
               <span class="form-fields__caption">Ім'я</span>
               <input class="form-fields__input" type="text" name="name" />
@@ -478,7 +483,7 @@
               <use href="./images/icons.svg#person"></use>
             </svg>
           </div>
-          <div class="form-fields">
+          <div class="form-fields modal__form-fields">
             <label class="form-fields__lable">
               <span class="form-fields__caption">Телефон</span>
               <input class="form-fields__input" type="tel" name="tel" />
@@ -487,7 +492,7 @@
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </div>
-          <div class="form-fields">
+          <div class="form-fields modal__form-fields">
             <label class="form-fields__lable">
               <span class="form-fields__caption">Пошта</span>
               <input class="form-fields__input" type="email" name="email" />
@@ -496,32 +501,31 @@
               <use href="./images/icons.svg#email"></use>
             </svg>
           </div>
-          <label class="form-fields__lable comment-label">
-            <span class="form-fields__caption">Коментар</span>
-            <textarea
-              name="comment"
-              placeholder="Введіть текст"
-              class="form-fields__input comment-field"
-            ></textarea>
-          </label>
-          <label class="agree-label">
-            <input class="form-fields__agree-checkbox" type="checkbox" name="agree-checkbox" />
-            <span class="form-fields__custom-checkbox">
-              <svg class="form-fields__custom-checkbox-icon" width="16" height="15">
-                <use href="./images/icons.svg#checked"></use>
-              </svg>
-            </span>
-            Погоджуюся з розсилкою та приймаю&nbsp;<a href="#" class="form-fields__link"
-              >Умови договору</a
-            >
-          </label>
-          <button type="submit" class="buttons buttons--action buttons--send">Відправити</button>
+          <div class="form-fields modal__comment-container">
+            <label class="form-fields__lable">
+              <span class="form-fields__caption">Коментар</span>
+              <textarea
+                name="comment"
+                placeholder="Введіть текст"
+                class="form-fields__input comment-field"
+              ></textarea>
+            </label>
+          </div>
+          <div class="form-checkbox modal__form-checkbox">
+            <label class="form-checkbox__agree-label">
+              <input class="form-checkbox__agree-checkbox" type="checkbox" name="agree-checkbox" />
+              <span class="form-checkbox__custom-checkbox">
+                <svg class="form-checkbox__custom-checkbox-icon" width="16" height="15">
+                  <use href="./images/icons.svg#checked"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю&nbsp;<a href="#" class="form-checkbox__link"
+                >Умови договору</a
+              >
+            </label>
+          </div>
+          <button class="buttons buttons--action buttons--send" type="submit">Відправити</button>
         </form>
-        <button type="button" class="modal__close" data-modal-close>
-          <svg class="modal__close-icon" width="11" height="11">
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </button>
       </div>
     </div>
 
