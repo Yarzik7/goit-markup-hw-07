@@ -1,0 +1,20 @@
+.page-header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.page-header__container {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.page-header__nav-flex {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
