@@ -15,16 +15,16 @@
   height: 100%;
   padding: 12px;
 
-  fill: var(--primary-white-color);
+  fill: $primary-white-color;
 
-  background-color: var(--bg-social-footer);
+  background-color: $bg-social-footer;
   border-radius: 50%;
-  transition: fill var(--transition-duration) var(--timing-function),
-    background-color var(--transition-duration) var(--timing-function);
+  transition: fill $transition-duration $timing-function,
+    background-color $transition-duration $timing-function;
 }
 
 .social__link:hover,
 .social__link:focus {
-  fill: var(--primary-white-color);
-  background-color: var(--accent-color);
+  fill: $primary-white-color;
+  background-color: $accent-color;
 }

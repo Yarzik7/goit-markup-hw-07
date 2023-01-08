@@ -1,9 +1,9 @@
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
-  background-color: var(--primary-white-color);
+  background-color: $primary-white-color;
 }
 
 .images {
@@ -22,13 +22,13 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.section__title {
-  margin-bottom: 50px;
+  .section__title {
+    margin-bottom: 50px;
 
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $title-text-color;
+  }
 }

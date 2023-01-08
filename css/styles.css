@@ -421,10 +421,6 @@ h3 {
   color: var(--accent-color);
 }
 
-.page-footer__logo {
-  margin-bottom: 28px;
-}
-
 .logo__header {
   color: var(--header-logo-color);
 }
@@ -559,6 +555,10 @@ h3 {
 
 .page-footer__address {
   margin-right: 70px;
+}
+
+.page-footer__logo {
+  margin-bottom: 28px;
 }
 
 .page-footer__subscribe {

@@ -6,13 +6,13 @@
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .logo__header {
-  color: var(--header-logo-color);
+  color: $header-logo-color;
 }
 
 .logo__footer {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
