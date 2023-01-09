@@ -1,8 +1,13 @@
+// Utils
 @import './utils/reset';
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
+
+// Base
 @import './base/base';
+
+// Components
 @import './components/modal';
 @import './components/form';
 @import './components/social';
