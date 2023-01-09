@@ -365,7 +365,6 @@ body {
   padding-bottom: 24px;
 }
 
-/* Site nav */
 .site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,7 +401,6 @@ body {
   content: "";
 }
 
-/* Header contacts */
 .contacts-header {
   display: -webkit-box;
   display: -ms-flexbox;
