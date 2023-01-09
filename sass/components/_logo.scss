@@ -7,12 +7,12 @@
   line-height: 1.2;
   text-decoration: none;
   color: $accent-color;
-}
 
-.logo__header {
-  color: $header-logo-color;
-}
+  &__header {
+    color: $header-logo-color;
+  }
 
-.logo__footer {
-  color: $primary-white-color;
+  &__footer {
+    color: $primary-white-color;
+  }
 }

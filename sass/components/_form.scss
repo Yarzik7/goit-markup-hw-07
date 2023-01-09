@@ -1,42 +1,53 @@
-.form-fields__lable {
-  display: block;
+.form-fields {
+  &__lable {
+    display: block;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: $primary-text-color;
-}
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+  }
 
-.form-fields__caption {
-  display: block;
-  margin-bottom: 4px;
+  &__caption {
+    display: block;
+    margin-bottom: 4px;
 
-  color: $primary-text-color;
-}
+    color: $primary-text-color;
+  }
 
-.form-fields__input {
-  min-width: 100%;
-  height: 40px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 42px;
-  padding-right: 12px;
+  &__input {
+    min-width: 100%;
+    height: 40px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    padding-right: 12px;
 
-  color: $header-logo-color;
+    color: $header-logo-color;
 
-  background-color: transparent;
-  border: 1px solid $modal-fields-border;
-  border-radius: 4px;
-  transition: border-color $transition-duration $timing-function;
+    background-color: transparent;
+    border: 1px solid $modal-fields-border;
+    border-radius: 4px;
+    transition: border-color $transition-duration $timing-function;
 
-  cursor: pointer;
-}
+    cursor: pointer;
 
-.form-fields__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transition: fill $transition-duration $timing-function;
+    .form-fields__lable:focus-within & {
+      border-color: $accent-color;
+      outline: none;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transition: fill $transition-duration $timing-function;
+
+    .form-fields__lable:focus-within + & {
+      fill: $accent-color;
+    }
+  }
 }
 
 .comment-field {
@@ -47,76 +58,67 @@
   padding-right: 16px;
 
   resize: none;
+
+  &::placeholder {
+    color: $modal-placeholder;
+  }
 }
 
-.comment-field::placeholder {
-  color: $modal-placeholder;
-}
+.form-checkbox {
+  &__agree-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+    /* margin-bottom: 30px; */
 
-.form-checkbox__agree-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 425px;
-  /* margin-bottom: 30px; */
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
 
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-}
+  &__agree-checkbox {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
 
-.form-checkbox__agree-checkbox {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
+  &__custom-checkbox {
+    position: relative;
 
-.form-checkbox__custom-checkbox {
-  position: relative;
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
 
-  display: block;
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
+    border: 2px solid $title-text-color;
+    border-radius: 4px;
+    transition: background-color $transition-duration $timing-function,
+      border-color $transition-duration $timing-function;
 
-  border: 2px solid $title-text-color;
-  border-radius: 4px;
-  transition: background-color $transition-duration $timing-function,
-    border-color $transition-duration $timing-function;
-}
+    .form-checkbox__agree-checkbox:checked + & {
+      background-color: $accent-color;
+      border-color: transparent;
+    }
+  }
 
-.form-checkbox__custom-checkbox-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  &__custom-checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  transition: fill $transition-duration $timing-function;
-  fill: transparent;
-}
+    transition: fill $transition-duration $timing-function;
+    fill: transparent;
 
-.form-checkbox__link {
-  color: $accent-color;
-  text-decoration-skip-ink: none;
-}
+    .form-checkbox__agree-checkbox:checked + .form-checkbox__custom-checkbox > & {
+      fill: $primary-white-color;
+    }
+  }
 
-.form-fields__lable:focus-within .form-fields__input {
-  border-color: $accent-color;
-  outline: none;
-}
-
-.form-fields__lable:focus-within + .form-fields__icon {
-  fill: $accent-color;
-}
-
-.form-checkbox__agree-checkbox:checked + .form-checkbox__custom-checkbox {
-  background-color: $accent-color;
-  border-color: transparent;
-}
-
-.form-checkbox__agree-checkbox:checked
-  + .form-checkbox__custom-checkbox
-  > .form-checkbox__custom-checkbox-icon {
-  fill: $primary-white-color;
+  &__link {
+    color: $accent-color;
+    text-decoration-skip-ink: none;
+  }
 }

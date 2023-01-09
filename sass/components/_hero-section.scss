@@ -5,22 +5,29 @@
   text-align: center;
 
   background-color: $bg-footer-color;
-}
 
-.section-hero__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 696px;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.37;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $primary-white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+
+  &__buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 
 .overlay {
